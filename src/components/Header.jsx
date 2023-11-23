@@ -16,7 +16,11 @@ export const Header = ({ darkMode }) => {
 					</h2>
 				</div>
 
-				<a href="" className="downloadCv" download={"CV de Alex Nieblas"}>
+				<a
+					href="/src/assets/curriculumAlex.pdf"
+					className="downloadCv"
+					download="curriculumAlex.pdf"
+				>
 					<div className={`${darkMode ? "dark" : ""} cvContainer`}>
 						<img className="cv" src={cv} alt="Icono para mostrar mi cv" />
 						<p className="curriculumTitle">CV</p>
