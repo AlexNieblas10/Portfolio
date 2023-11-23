@@ -1,0 +1,41 @@
+.link{
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  outline: 2px solid rgba(76, 85, 101, 1);
+  border-radius: 10px;
+  box-sizing: border-box;
+  transition: outline 0.2s;
+}
+.link.dark{
+  outline: 2px solid white;
+
+}
+
+.iconContainer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  border-radius: 30px;
+  padding: 10px;
+}
+
+.imageIcon{
+  width: 40px;
+  height: 100%;
+}
+
+.nameIcon{
+  margin: 0;
+}
+
+.link:hover{
+  outline: 4px solid rgba(76, 85, 101, 1);
+}
+
+.link.dark:hover{
+  outline: 4px solid white;
+
+}

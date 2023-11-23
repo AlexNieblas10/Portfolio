@@ -1,0 +1,50 @@
+:root {
+	--secondary-color: #505a5b;
+	--tirth-color: #8f91a2;
+	--text-principal: rgb(102, 151, 224);
+	--text-secondary: rgb(174, 211, 251);
+	--text-dark: white;
+	--text-light: black;
+	--title: 3rem;
+	--subtitle: 2rem;
+	--text: 14px
+}
+
+.dark {
+	--main-color-dark: #454545;
+}
+
+* {
+	font-family: "Rubik";
+}
+
+
+
+#main_container {
+	background-color: var(--main-color);
+	display: flex;
+	justify-content: center;
+	min-height: 100vh;
+}
+
+#main_container.dark {
+	background-color: var(--main-color-dark);
+}
+
+#app_container {
+	position: relative;
+	width: 100%;
+	max-width: 48rem;
+}
+
+.darkOrLightModeContainer {
+	width: 40px;
+	height: 40px;
+}
+
+.imageDarkOrLightMode {
+	width: 100%;
+	height: 100%;
+	color: var(--text-dark);
+	cursor: pointer;
+}

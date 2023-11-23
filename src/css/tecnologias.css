@@ -1,0 +1,30 @@
+.container{
+    width: 100%;
+}
+.image{
+    height: 30px;
+    width: 30px;
+}
+
+.title{
+    display: flex;
+    gap: 10px;
+    font-size: var(--subtitle);
+    color: var(--text-principal);
+}
+
+.tecnologiasContainer{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 50px 0px;
+
+}
+
+@media (width < 650px) {
+    .title{
+        padding-left: 10px;
+    }
+}

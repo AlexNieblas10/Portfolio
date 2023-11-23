@@ -1,0 +1,101 @@
+.header {
+	width: 100%;
+	box-sizing: border-box;
+	display: flex;
+	align-items: center;
+	padding: 10px;
+	border-bottom: 2px dashed rgb(130, 130, 130);
+	position: relative;
+	gap: 10px;
+}
+
+.imagenContainer {
+	width: 200px;
+	height: 200px;
+	display: flex;
+	justify-content: center;
+	background-color: var(--text-secondary);
+	border-radius: 100%;
+}
+
+.imagen {
+	width: 100%;
+	height: 100%;
+	filter: drop-shadow(10px 0px 10px var(--secondary-color));
+}
+
+.informacionContainer {
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+#textoNombre {
+	font-size: var(--title);
+	margin: 0;
+	color: var(--text-principal);
+}
+
+#textoPuesto {
+	font-size: var(--text);
+	margin-top: 0;
+	margin-bottom: 30px;
+	color: var(--text-secondary);
+}
+
+.cvContainer {
+	width: 140px;
+	height: 40px;
+	background-color: var(--text-secondary);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 10px;
+	transition: background-color;
+	transition-duration: 0.3s;
+	cursor: pointer;
+}
+
+.cvContainer.dark {
+	background-color: var(--text-principal);
+}
+
+.cvContainer:hover {
+	background-color: var(--text-principal);
+}
+
+.cvContainer.dark:hover{
+	background-color: var(--text-secondary);
+}
+
+.downloadCv{
+	text-decoration: none;
+}
+
+.cv {
+	width: 30%;
+	height: 80%;
+}
+
+.curriculumTitle {
+	color: var(--text-light);
+	font-size: larger;
+}
+
+@media (width < 650px) {
+	.header {
+		flex-direction: column;
+		gap: 0;
+		align-items: center;
+	}
+	.textos {
+		text-align: center;
+	}
+	.informacionContainer {
+		align-items: center;
+	}
+	#textoPuesto {
+		text-wrap: balance;
+	}
+}

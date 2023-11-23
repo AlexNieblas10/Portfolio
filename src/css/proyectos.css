@@ -1,0 +1,30 @@
+.container {
+	width: 100%;
+}
+
+.proyectosContainer {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+
+.image {
+	height: 30px;
+	width: 30px;
+}
+
+.title {
+	display: flex;
+	gap: 10px;
+	font-size: var(--subtitle);
+	color: var(--text-principal);
+}
+
+@media (width < 650px) {
+	.proyectosContainer {
+		padding: 10px;
+	}
+	.title {
+		padding-left: 10px;
+	}
+}
