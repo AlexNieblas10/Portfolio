@@ -17,7 +17,7 @@ export const Header = ({ darkMode }) => {
 				</div>
 
 				<a
-					href="/src/assets/curriculumAlex.pdf"
+					href="/curriculumAlex.pdf"
 					className="downloadCv"
 					download="curriculumAlex.pdf"
 				>
