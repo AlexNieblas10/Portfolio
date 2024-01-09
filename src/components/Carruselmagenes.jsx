@@ -11,11 +11,11 @@ export const Carruselmagenes = ({ imagenes, link }) => {
 		if (indexImage === 0) {
 			setTimeout(() => {
 				setIndexImage(imagenes.length - 1)
-			}, 500)
+			}, 100)
 		} else {
 			setTimeout(() => {
 				setIndexImage(indexImage - 1)
-			}, 500)
+			}, 100)
 		}
 		setCambioImagenIzquierda(true)
 	}
@@ -24,11 +24,11 @@ export const Carruselmagenes = ({ imagenes, link }) => {
 		if (indexImage === imagenes.length - 1) {
 			setTimeout(() => {
 				setIndexImage(0)
-			}, 500)
+			}, 100)
 		} else {
 			setTimeout(() => {
 				setIndexImage(indexImage + 1)
-			}, 500)
+			}, 100)
 		}
 		setCambioImagenDerecha(true)
 	}
