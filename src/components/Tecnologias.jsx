@@ -11,6 +11,7 @@ import mysql from "../assets/mysql.svg"
 import python from "../assets/python.svg"
 import terminal from "../assets/terminal.svg"
 import computer from "../assets/tic-computer.svg"
+import vue from "../assets/vue.svg"
 import "../css/tecnologias.css"
 
 export const Tecnologias = ({dark}) => {
@@ -26,13 +27,13 @@ export const Tecnologias = ({dark}) => {
 				<Tecnologia dark={dark} title={"Tailwind"} image={tailwind} />
 				<Tecnologia dark={dark} title={"JavaScript"} image={javascript} />
 				<Tecnologia dark={dark} title={"React"} image={react} />
+				<Tecnologia dark={dark} title={"Vue"} image={vue} />
 				<Tecnologia dark={dark} title={"Node.js"} image={node} />
 				<Tecnologia dark={dark} title={"Python"} image={python} />
 				<Tecnologia dark={dark} title={"MySQL"} image={mysql} />
 				<Tecnologia dark={dark} title={"Git"} image={git} />
 				<Tecnologia dark={dark} title={"GitHub"} image={github} />
 				<Tecnologia dark={dark} title={"Terminal"} image={terminal} />
-
 			</aside>
 		</section>
 	)
